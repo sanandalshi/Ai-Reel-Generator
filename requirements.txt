@@ -1,0 +1,9 @@
+flask
+werkzeug
+elevenlabs
+ services:
+  - type: web
+    name: aireel
+    runtime: python
+    buildCommand: "apt-get install -y ffmpeg && pip install -r requirements.txt"
+    startCommand: "python main.py"
